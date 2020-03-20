@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">to.do</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_settings">Settings</string>
+    <string name="add_btn_text">+</string>
+    <string name="title_tasks">Tasks</string>
+    <string name="hint_add_task">I want to...</string>
+    <string name="to_replace">Empty</string>
+</resources>
