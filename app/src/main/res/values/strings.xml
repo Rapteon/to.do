@@ -6,4 +6,5 @@
     <string name="title_tasks">Tasks</string>
     <string name="hint_add_task">I want to...</string>
     <string name="to_replace">Empty</string>
+    <string name="mail_setting">Enable e-mail notifications</string>
 </resources>

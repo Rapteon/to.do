@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="2dp"
     tools:context=".ui.tasks.TasksFragment">
 
     <EditText
@@ -15,12 +16,12 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/hint_add_task"
+        android:inputType="textImeMultiLine"
         android:labelFor="@id/addBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/addBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        android:inputType="textImeMultiLine"/>
+        app:layout_constraintStart_toStartOf="parent" />
 
     <SearchView
         android:id="@+id/searchView2"
