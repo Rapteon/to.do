@@ -15,12 +15,12 @@
         android:autofillHints=""
         android:ems="10"
         android:hint="@string/hint_add_task"
-        android:inputType="textPersonName"
         android:labelFor="@id/addBtn"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/addBtn"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:inputType="textImeMultiLine"/>
 
     <SearchView
         android:id="@+id/searchView2"
