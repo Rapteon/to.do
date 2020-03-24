@@ -10,11 +10,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.List;
 
+//The class being extended has <something>. Read generic wildcards in Java (v5+).
 public class NotesAdapter extends RecyclerView.Adapter<NotesAdapter.NoteHolder> {
     private List<String> notesList;
     public NotesAdapter(List<String> notesList){
         this.notesList = notesList;
     }
+
     @NonNull
     @Override
     public NoteHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
