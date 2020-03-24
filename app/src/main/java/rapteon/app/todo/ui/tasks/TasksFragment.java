@@ -29,13 +29,14 @@ public class TasksFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
         ViewModelProviders.of(this).get(TasksViewModel.class);
         View root = inflater.inflate(R.layout.fragment_tasks, container, false);
-        noteViewRecycler = root.findViewById(R.id.notesRecyclerView);
-        notesLayoutManager = new LinearLayoutManager(inflater.getContext());
-        noteViewRecycler.setLayoutManager(notesLayoutManager);
-        list = Arrays.asList(getResources().getStringArray(R.array.notes));
-        adapter = new NotesAdapter(list);
-        noteViewRecycler.setHasFixedSize(true);
-        noteViewRecycler.setAdapter(adapter);
+
+        noteViewRecycler = root.findViewById(R.id.notesRecyclerView);       //This line finds the RecyclerView from fragment_tasks.
+        notesLayoutManager = new LinearLayoutManager(inflater.getContext());    //The Recycler uses LinearLayoutManager to fill itself with Views.
+        noteViewRecycler.setLayoutManager(notesLayoutManager);      //Setting the LayoutManager for RecyclerView.
+        list = Arrays.asList(getResources().getStringArray(R.array.notes));     //Obtaining data to display.
+        adapter = new NotesAdapter(list);       //Creating NotesAdapter object manage views in this RecyclerView.
+        noteViewRecycler.setHasFixedSize(true); //Since the data in Views won't change the size of the RecyclerView. (Helps performance).
+        noteViewRecycler.setAdapter(adapter);   //Setting the Adapter for RecyclerView.
         return root;
     }
 }
